@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YDQ-pj-xKX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7eF-Qs-gnR">
+            <objects>
+                <navigationController id="YDQ-pj-xKX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ds5-H4-Mv5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XOd-v1-KJq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krz-5M-qGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1518" y="156"/>
+        </scene>
+        <!--Set Current GPA and Hours-->
+        <scene sceneID="ntf-aN-l04">
+            <objects>
+                <viewController title="Set Current GPA and Hours" id="3Bo-J1-RpX" customClass="SetCurrentInfoViewController" customModule="gpaCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p4E-ru-Dwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJG-qU-zpX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gB5-dE-kpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-uf-M3Z">
+                                <rect key="frame" x="16" y="114" width="343" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hwn-v6-Snk">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMu-4B-vRh" userLabel="Current GPA Label">
+                                                <rect key="frame" x="0.0" y="2" width="171.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3.2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKa-2M-F8C">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                                <color key="textColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PCW-Sx-r5W">
+                                        <rect key="frame" x="0.0" y="70" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deX-9i-1If" userLabel="Current Hours Label">
+                                                <rect key="frame" x="0.0" y="2" width="171.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="60" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwq-HX-gFI">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                                <color key="textColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="azb-x7-8ZU"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ki-7O-fte">
+                                <rect key="frame" x="67" y="507" width="240" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K7-d3-W0d" userLabel="Set Button">
+                                        <rect key="frame" x="8" y="8" width="224" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="Set">
+                                            <color key="titleColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SetButtonPressed:" destination="3Bo-J1-RpX" eventType="touchUpInside" id="BBO-Wt-28t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6K7-d3-W0d" firstAttribute="top" secondItem="0Ki-7O-fte" secondAttribute="topMargin" id="5Fs-v4-KGR"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="6K7-d3-W0d" secondAttribute="bottom" id="8mQ-Q7-U4X"/>
+                                    <constraint firstItem="6K7-d3-W0d" firstAttribute="leading" secondItem="0Ki-7O-fte" secondAttribute="leadingMargin" id="hSm-YC-mis"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="6K7-d3-W0d" secondAttribute="trailing" id="ifb-LP-Sjz"/>
+                                    <constraint firstAttribute="height" constant="60" id="m9v-dH-aGd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mJG-qU-zpX" firstAttribute="top" secondItem="0Ki-7O-fte" secondAttribute="bottom" constant="100" id="7rl-hl-7bS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rwn-uf-M3Z" secondAttribute="trailing" id="Nkx-3K-KpL"/>
+                            <constraint firstItem="0Ki-7O-fte" firstAttribute="leading" secondItem="gB5-dE-kpC" secondAttribute="leadingMargin" constant="51" id="XxJ-Tb-An4"/>
+                            <constraint firstItem="Rwn-uf-M3Z" firstAttribute="leading" secondItem="gB5-dE-kpC" secondAttribute="leadingMargin" id="eIn-Eg-KNi"/>
+                            <constraint firstItem="Rwn-uf-M3Z" firstAttribute="top" secondItem="p4E-ru-Dwm" secondAttribute="bottom" constant="50" id="mfg-hA-MGP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ki-7O-fte" secondAttribute="trailing" constant="52" id="mke-7B-FzM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GPAValueTextField" destination="oKa-2M-F8C" id="v7M-R5-dNt"/>
+                        <outlet property="hoursValueTextField" destination="gwq-HX-gFI" id="3dy-8k-K5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnc-Yf-5Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="-555"/>
+        </scene>
+        <!--Classes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ClassListViewController" customModule="gpaCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fbn-mr-ccE">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" id="8fx-AV-KKa">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpB-Uh-62Q" userLabel="Current GPA Label">
+                                            <rect key="frame" x="0.0" y="0.0" width="39" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgL-2R-CsN" userLabel="Current GPA Value Label">
+                                            <rect key="frame" x="58.5" y="0.0" width="24" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbh-c4-grw" userLabel="Current Hours Label">
+                                            <rect key="frame" x="102" y="0.0" width="52.5" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN7-yS-l3f" userLabel="Current Hours Value Label">
+                                            <rect key="frame" x="174.5" y="0.0" width="10.5" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proj GPA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLa-Vo-bWR" userLabel="Projected GPA Label">
+                                            <rect key="frame" x="204.5" y="0.0" width="74" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf2-HO-fE5" userLabel="Projected GPA Value Label">
+                                            <rect key="frame" x="298" y="0.0" width="45" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="ky6-S9-KIt">
+                                    <rect key="frame" x="0.0" y="136" width="343" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OE-wC-2OM" userLabel="Proj GPA Button">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                            <state key="normal" title="Project GPA"/>
+                                            <connections>
+                                                <action selector="projectedGPAButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riO-LC-VCW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="6OE-wC-2OM" firstAttribute="top" secondItem="ky6-S9-KIt" secondAttribute="top" id="QaB-nq-9Tb"/>
+                                        <constraint firstAttribute="trailing" secondItem="6OE-wC-2OM" secondAttribute="trailing" id="aCm-K2-WkP"/>
+                                        <constraint firstItem="6OE-wC-2OM" firstAttribute="leading" secondItem="ky6-S9-KIt" secondAttribute="leading" id="qzL-A3-1xD"/>
+                                        <constraint firstAttribute="bottom" secondItem="6OE-wC-2OM" secondAttribute="bottom" id="uVB-X8-JAV"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClassInfoCell" rowHeight="64" id="wdC-5V-EMZ" userLabel="ClassInfoCell" customClass="ClassListTableViewCell" customModule="gpaCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="343" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdC-5V-EMZ" id="X1U-5H-J4V">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ko8-3C-pMa" userLabel="Cell Stack View">
+                                                    <rect key="frame" x="8" y="8" width="327" height="48"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="df3-NS-rZ9" userLabel="Left Stack View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109" height="48"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf0-Z6-wvd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retake: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y5-Pc-tbq" userLabel="Retake Label">
+                                                                    <rect key="frame" x="0.0" y="26.5" width="61.5" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-0i-Tgh" userLabel="Right Stack View">
+                                                            <rect key="frame" x="109" y="0.0" width="109" height="48"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBc-3u-jwq" userLabel="Hours Label">
+                                                                    <rect key="frame" x="58" y="0.0" width="51" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AL-Ia-pac" userLabel="Grade Label">
+                                                                    <rect key="frame" x="57.5" y="26.5" width="51.5" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="crD-CA-92x" userLabel="Value Stack View">
+                                                            <rect key="frame" x="218" y="0.0" width="109" height="48"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhO-uO-f1z" userLabel="Hours ValueLabel">
+                                                                    <rect key="frame" x="33" y="0.0" width="43" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-yV-VWf" userLabel="Grade Value Label">
+                                                                    <rect key="frame" x="33" y="24" width="43" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ko8-3C-pMa" secondAttribute="bottom" id="3qs-4V-VXg"/>
+                                                <constraint firstItem="ko8-3C-pMa" firstAttribute="leading" secondItem="X1U-5H-J4V" secondAttribute="leadingMargin" id="7lY-aE-JrO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ko8-3C-pMa" secondAttribute="trailing" id="K03-cE-FS9"/>
+                                                <constraint firstItem="ko8-3C-pMa" firstAttribute="top" secondItem="X1U-5H-J4V" secondAttribute="topMargin" id="mob-Ex-sOQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.9994240403175354" green="0.91767306130979742" blue="0.30924449060828746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="classNameLabel" destination="sf0-Z6-wvd" id="gZA-Bv-zj5"/>
+                                            <outlet property="gradeLabel" destination="8AL-Ia-pac" id="HM9-Od-KCd"/>
+                                            <outlet property="gradeValueLabel" destination="z9T-yV-VWf" id="bDE-nh-hja"/>
+                                            <outlet property="hoursLabel" destination="OBc-3u-jwq" id="1AU-Bg-CXr"/>
+                                            <outlet property="hoursValueLabel" destination="LhO-uO-f1z" id="bYI-8O-3kt"/>
+                                            <outlet property="retakeLabel" destination="6Y5-Pc-tbq" id="z2M-BZ-DCd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fbn-mr-ccE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7nw-jg-cCf"/>
+                            <constraint firstItem="Fbn-mr-ccE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Ndi-17-vRm"/>
+                            <constraint firstItem="Fbn-mr-ccE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R2G-Gy-Z7l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fbn-mr-ccE" secondAttribute="bottom" id="cpB-tE-ePe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Classes" id="OZY-6f-JJ6">
+                        <barButtonItem key="leftBarButtonItem" title="Set GPA/Hours" id="ej4-fE-vAs">
+                            <color key="tintColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="3Bo-J1-RpX" kind="show" id="Tm7-PD-XCm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RAR-B5-WpF">
+                            <color key="tintColor" red="0.59607843137254901" green="0.11764705882352941" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="7Ja-WN-L1p" kind="show" id="8g8-1n-ZeS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentGPALabel" destination="qpB-Uh-62Q" id="xai-Xa-65l"/>
+                        <outlet property="currentGPAValueLabel" destination="QgL-2R-CsN" id="Lpi-By-ylR"/>
+                        <outlet property="currentHoursLabel" destination="Vbh-c4-grw" id="Jkh-7c-WNh"/>
+                        <outlet property="currentHoursValueLabel" destination="tN7-yS-l3f" id="Yds-VS-DaK"/>
+                        <outlet property="projectedGPAButton" destination="6OE-wC-2OM" id="hBQ-rh-il1"/>
+                        <outlet property="projectedGPAValueLabel" destination="Lf2-HO-fE5" id="zMi-L5-gNQ"/>
+                        <outlet property="tableView" destination="Fbn-mr-ccE" id="Pk5-Ny-sFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="155"/>
+        </scene>
+        <!--Add Class-->
+        <scene sceneID="Cw5-z1-aLy">
+            <objects>
+                <viewController title="Add Class" id="7Ja-WN-L1p" customClass="AddClassViewController" customModule="gpaCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0qU-RH-zw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="i8m-zm-hHl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vGd-06-Y7p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-p3-Njz">
+                                <rect key="frame" x="16" y="64" width="343" height="234"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RLG-yG-3j2" userLabel="Class Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzq-OE-CS5" userLabel="Class Name Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxd-fC-WZX" userLabel="Class Name Text Field">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="47"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="g1X-yW-c7z" userLabel="Hours Stack View">
+                                        <rect key="frame" x="0.0" y="47" width="343" height="46.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-Cb-yG8" userLabel="Hours Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hours" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chb-4t-odF" userLabel="Hours Text Field">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="46.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="l6y-0X-M7T" userLabel="Grade Stack View">
+                                        <rect key="frame" x="0.0" y="93.5" width="343" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHa-c2-BnC" userLabel="Grade Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-v2-Val">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="47"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kKd-GP-SUL" userLabel="Retake Stack View">
+                                        <rect key="frame" x="0.0" y="140.5" width="343" height="46.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retake:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvQ-fa-kjb" userLabel="Retake Label">
+                                                <rect key="frame" x="0.0" y="10" width="294" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zt5-Ih-wLa" userLabel="Retake Switch">
+                                                <rect key="frame" x="294" y="8" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="retakeSwitchPressed:" destination="7Ja-WN-L1p" eventType="valueChanged" id="0Zb-3u-KT7"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-FX-QKl">
+                                        <rect key="frame" x="0.0" y="187" width="343" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous Grade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NN-Ve-NIn" userLabel="Previous Grade Label">
+                                                <rect key="frame" x="0.0" y="10.5" width="159.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPb-vk-yBB">
+                                                <rect key="frame" x="174.5" y="10.5" width="60" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="mnV-Uk-HSr">
+                                                <rect key="frame" x="249" y="9" width="94" height="29"/>
+                                                <color key="tintColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="stepperValueChanged:" destination="7Ja-WN-L1p" eventType="valueChanged" id="kKI-s7-Vsl"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFo-F0-b1F">
+                                <rect key="frame" x="67" y="507" width="240" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSk-Sy-9Ke">
+                                        <rect key="frame" x="8" y="8" width="224" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <state key="normal" title="Add Class">
+                                            <color key="titleColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addClassButtonPressed:" destination="7Ja-WN-L1p" eventType="touchUpInside" id="Xjg-Rn-tke"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="10R-7j-xn9"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="QSk-Sy-9Ke" secondAttribute="bottom" id="KHu-Lt-uq6"/>
+                                    <constraint firstItem="QSk-Sy-9Ke" firstAttribute="top" secondItem="dFo-F0-b1F" secondAttribute="topMargin" id="ehf-FL-l59"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="QSk-Sy-9Ke" secondAttribute="trailing" id="rTd-9T-0dV"/>
+                                    <constraint firstItem="QSk-Sy-9Ke" firstAttribute="leading" secondItem="dFo-F0-b1F" secondAttribute="leadingMargin" id="teC-1T-DVh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CB-Dk-v5c">
+                                <rect key="frame" x="67" y="351" width="240" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="shD-He-EHd" userLabel="Note Stack View">
+                                        <rect key="frame" x="8" y="8" width="224" height="112"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: Hours should be either 3 OR 5" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-pK-I8H" userLabel="Note 1 Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="52.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: Previous Grade can only be from FN and C-" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERw-4d-wsC" userLabel="Note 2 Label">
+                                                <rect key="frame" x="0.0" y="59.5" width="224" height="52.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" red="0.59607843140000005" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="FyO-zv-Lo7"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="shD-He-EHd" secondAttribute="bottom" id="KiB-Hd-H94"/>
+                                    <constraint firstItem="shD-He-EHd" firstAttribute="leading" secondItem="3CB-Dk-v5c" secondAttribute="leadingMargin" id="SA6-X3-xLq"/>
+                                    <constraint firstItem="shD-He-EHd" firstAttribute="top" secondItem="3CB-Dk-v5c" secondAttribute="topMargin" id="Xvv-2y-v2r"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="shD-He-EHd" secondAttribute="trailing" id="jHu-54-orE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfG-p3-Njz" firstAttribute="top" secondItem="0qU-RH-zw3" secondAttribute="bottom" id="1pM-m3-O2f"/>
+                            <constraint firstItem="i8m-zm-hHl" firstAttribute="top" secondItem="dFo-F0-b1F" secondAttribute="bottom" constant="100" id="7zP-hX-7dF"/>
+                            <constraint firstItem="cfG-p3-Njz" firstAttribute="leading" secondItem="vGd-06-Y7p" secondAttribute="leadingMargin" id="9rD-rv-XXU"/>
+                            <constraint firstItem="3CB-Dk-v5c" firstAttribute="top" secondItem="cfG-p3-Njz" secondAttribute="bottom" constant="53" id="COB-hs-gTZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cfG-p3-Njz" secondAttribute="trailing" id="CXL-8w-PeU"/>
+                            <constraint firstItem="i8m-zm-hHl" firstAttribute="top" secondItem="cfG-p3-Njz" secondAttribute="bottom" constant="369" id="Efw-m8-sJx"/>
+                            <constraint firstItem="3CB-Dk-v5c" firstAttribute="leading" secondItem="vGd-06-Y7p" secondAttribute="leadingMargin" constant="51" id="FFw-gR-KZd"/>
+                            <constraint firstItem="dFo-F0-b1F" firstAttribute="leading" secondItem="vGd-06-Y7p" secondAttribute="leadingMargin" constant="51" id="ciR-a8-Ijq"/>
+                            <constraint firstItem="3CB-Dk-v5c" firstAttribute="top" secondItem="cfG-p3-Njz" secondAttribute="bottom" constant="53" id="g53-6G-8xe"/>
+                            <constraint firstItem="cfG-p3-Njz" firstAttribute="top" secondItem="0qU-RH-zw3" secondAttribute="bottom" id="mdd-Pl-80Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dFo-F0-b1F" secondAttribute="trailing" constant="52" id="sbP-wT-sgG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3CB-Dk-v5c" secondAttribute="trailing" constant="52" id="vSX-ZX-94c"/>
+                            <constraint firstItem="3CB-Dk-v5c" firstAttribute="leading" secondItem="vGd-06-Y7p" secondAttribute="leadingMargin" constant="51" id="y9d-SC-MfC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="classNameLabel" destination="Pzq-OE-CS5" id="KhC-h9-QLo"/>
+                        <outlet property="classNameTextField" destination="lxd-fC-WZX" id="RiL-xR-wqK"/>
+                        <outlet property="gradeLabel" destination="PHa-c2-BnC" id="OAz-i3-HaW"/>
+                        <outlet property="hoursLabel" destination="jTC-Cb-yG8" id="gyC-no-kXB"/>
+                        <outlet property="hoursTextField" destination="Chb-4t-odF" id="Bpg-ie-izs"/>
+                        <outlet property="pickerView" destination="i2k-v2-Val" id="TcJ-xb-oIi"/>
+                        <outlet property="previousGradeLabel" destination="5NN-Ve-NIn" id="h3W-Td-aqj"/>
+                        <outlet property="previousGradeResultLabel" destination="cPb-vk-yBB" id="opu-Yt-gLe"/>
+                        <outlet property="retakeLabel" destination="gvQ-fa-kjb" id="ZVi-sW-M4A"/>
+                        <outlet property="retakeSwitch" destination="Zt5-Ih-wLa" id="1xG-zK-ggR"/>
+                        <outlet property="stepperLabel" destination="mnV-Uk-HSr" id="DCy-K2-NSX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xN8-xD-onz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+</document>
